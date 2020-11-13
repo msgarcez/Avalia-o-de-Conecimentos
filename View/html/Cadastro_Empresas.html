@@ -7,9 +7,13 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/Cadastro_Empresa.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/padrao.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../js/Cadastro_Empresas.js" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 
@@ -21,27 +25,15 @@
     </div>
   </nav>
 
-  <div class="container">
-      <h2>Cards</h2>
-      <div class="row">
-          <div class="col s12 16">
-              <div class="card">
-                  <div class="card-image">
-                      <img src="" alt="">
-                  </div>
-                  <div class="card-content">
-                      <span class="car-titlhe">
-                          Cadastro de Nova Empresa
-                      </span>
-                      <p></p>
-
-                  </div>
-              </div>
-          </div>
-          <div class="col s12 16">
-              
-        </div>
-      </div>
+  
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Selecione um Estado</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Estado</label>
   </div>
 
 
@@ -75,6 +67,12 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script src="../js/init.js"></script>
+
+  <script>
+       $(document).ready(function(){
+    $('select').formSelect();
+  });
+  </script>
 
   </body>
 </html>
